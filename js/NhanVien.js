@@ -22,7 +22,7 @@ function NhanVien(so,ten,email,matKhau,ngay,luongCB,chucVu,gio) {
         }}
         this.xepLoai = function(){
            if (this.gioLam >= 192){
-             this.XepLoai = "Xuất xét" ;
+             this.XepLoai = "Xuất sắc" ;
            }else if(this.gioLam >= 176 && this.gioLam < 192){
               this.XepLoai = "Giỏi";
            }else if(this.gioLam >= 160 && this.gioLam < 176){

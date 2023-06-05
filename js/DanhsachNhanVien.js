@@ -23,7 +23,7 @@ function DanhSachNhanVien() {
     this.xoaNV = function (ma) {
             // index: vị trí cần xoá 
             var index = this.timIndex(ma);
-            // console.log(index)
+            
             if(index > -1){
                 this.mangNV.splice(index,1)
             }
@@ -33,6 +33,9 @@ function DanhSachNhanVien() {
         var indexFind = this.timIndex(nv.soTK);
         if(indexFind > -1 ){
             dsnv.mangNV[indexFind] = nv ;
+            return true ;
+        }else{
+            return false ;
         }
     }
     }
